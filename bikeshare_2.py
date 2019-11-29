@@ -68,7 +68,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
 
-    #load data into dataframe
+
     df = pd.read_csv(CITY_DATA[city])
 
     #convert start time and end time into datetime
