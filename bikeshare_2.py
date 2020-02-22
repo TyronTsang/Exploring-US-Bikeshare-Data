@@ -15,7 +15,7 @@ def get_filters():
     month = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
     day = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'all']
     """
-    Asks user to specify a city, month, and day to analyze.
+    Asks user to specify a city, month, and day to analyze the data needed for inputting 
 
     Returns:
         (str) city - name of the city to analyze
@@ -42,7 +42,7 @@ def get_filters():
         else:
             break
 
-    
+
     while True:
         input_day = input('Please select a day of the week or all:').lower()
         if input_day not in day:
