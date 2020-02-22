@@ -97,7 +97,7 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df):
+def time_statistics(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -121,7 +121,7 @@ def time_stats(df):
     print('-'*40)
 
 
-def station_stats(df):
+def station_statistics(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
