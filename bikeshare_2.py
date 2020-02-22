@@ -15,7 +15,7 @@ def get_filters():
     month = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
     day = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'all']
     """
-    Asks user to specify a city, month, and day to analyze.
+    Asks user to specify a city, month, and day to analyze the data needed for inputting 
 
     Returns:
         (str) city - name of the city to analyze
@@ -42,7 +42,7 @@ def get_filters():
         else:
             break
 
-    # get user input for day of week (all, monday, tuesday, ... sunday)
+
     while True:
         input_day = input('Please select a day of the week or all:').lower()
         if input_day not in day:
@@ -97,7 +97,7 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df):
+def time_statistics(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -121,7 +121,7 @@ def time_stats(df):
     print('-'*40)
 
 
-def station_stats(df):
+def station_statistics(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
